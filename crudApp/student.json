@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Gopi",
+      "email": "gopi@gopi.in",
+      "country": "India"
+    },
+    {
+      "id": 2,
+      "name": "Gopi2",
+      "email": "gopi2@gopi.in",
+      "country": "India Forever"
+    }
+  ]
+}
