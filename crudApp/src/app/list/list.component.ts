@@ -18,6 +18,6 @@ export class ListComponent {
   }
   ondelete(id:number){
     this.service.deleteStudent(id).subscribe(x=>console.log(x));
-    this.students= this.students.filter((x)=> x.id !== id)
+    this.students=this.students.filter((x)=>x.id !== id)
   }
 }

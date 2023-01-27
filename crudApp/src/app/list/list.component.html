@@ -13,10 +13,11 @@
                 <td>{{s.email}}</td>
                 <td>{{s.country}}</td>
                 <td><a routerLink='/details/{{s.id}}'>
-                    <button class="btn btn-success">view</button>
-                </a> &nbsp; &nbsp;
-                <button class="btn btn-danger" (click)="ondelete(s.id)">delete</button>
-            </td>
+                    <button class="btn btn-success ">View</button>
+                </a></td>
+                <td><a routerLink='/details/{{s.id}}'>
+                    <button class="btn btn-danger" (click)="ondelete(s.id)">Delete</button>
+                </a></td>
             </tr>
         </tbody>
     </table>
