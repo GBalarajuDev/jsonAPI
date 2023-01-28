@@ -14,9 +14,12 @@
                 <td>{{s.country}}</td>
                 <td><a routerLink='/details/{{s.id}}'>
                     <button class="btn btn-success ">View</button>
-                </a></td>
-                <td><a routerLink='/details/{{s.id}}'>
+                </a>
+                <a routerLink='/details/{{s.id}}'>
                     <button class="btn btn-danger" (click)="ondelete(s.id)">Delete</button>
+                </a>
+                <a routerLink='/details/{{s.id}}'>
+                    <button class="btn btn-primary" (click)="onUpdate(obj, s.id)">Update</button>
                 </a></td>
             </tr>
         </tbody>

@@ -1,1 +1,35 @@
-<p>update-student works!</p>
+
+
+<div class="row">
+    <div class="col-md-6 offset-3">
+        <form (ngSubmit)="onUpdate1(obj)">
+            
+            <h1>Update Student details</h1>
+            <h2>Welcome {{obj.name}}</h2>
+            <p>
+                Following are the requested data to update
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">Id:{{obj.id}}</li>
+            </ul>
+    
+            
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="obj.name" placeholder="Name">
+            </div>
+        
+        
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" name="email" [(ngModel)]="obj.email" placeholder="Email">
+            </div>
+        
+            <div class="form-group">
+                <label>Country</label>
+                <input type="text" class="form-control" name="country" [(ngModel)]="obj.country" placeholder="Country">
+            </div>
+            <button class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
